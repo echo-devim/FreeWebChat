@@ -20,7 +20,7 @@ Features:
 *  Chat history panel
 *  Show status (online/offline) for contacts in the chat history
 *  Block/Unblock users
-*  Multiple languages support (english, italian)
+*  Multiple language support (english, italian)
 *  Chat and relative messages deletion
 *  Bad words filter
 *  Compress and resize uploaded images
