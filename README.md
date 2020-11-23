@@ -1,16 +1,18 @@
 # FreeWebChat
 
+![screenshot](screenshot.png)
+
 FreeWebChat has a backend developed in PHP7+MySQL that exposes REST APIs to the frontend written using JQuery (Ajax) and HTML5.
 The database access is performed through [PDO](https://www.php.net/manual/en/book.pdo.php).
 The project focuses on a one-to-one chat, however it should be easy to implement chat rooms.
 
-This chat is thought to be easily integrated in existing web applications.
+This chat can be easily integrated in existing web applications.
 Thus, the source code doesn't include user login and register pages.
-The chat should be configured to use the users managed by your web app.
+The chat should be configured to use the users managed by your web app (see `config.php` and `js/chat.js`).
 
 Features:
-*  Message read notification
-*  (near)Real Time
+*  Message read/unread mark
+*  (near)Real Time (ajax polling)
 *  Photo Upload
 *  Emoji
 *  Smartphone/Tablet support (dynamic resize)
@@ -22,7 +24,7 @@ Features:
 *  Chat and relative messages deletion
 *  Bad words filter
 *  Compress and resize uploaded images
-*  New active chats highlighting
+*  Highlight other chats with unread messages
 
 # Backend API
 The APIs return JSON objects and can be accessed only by authenticated users (based on session cookie).
